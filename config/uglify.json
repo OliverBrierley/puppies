@@ -1,0 +1,19 @@
+{
+    "dist": {
+        "options": {
+            "manage": true,
+            "compress": true
+        },
+        "files": [
+            {
+                "expand": true,
+                "cwd": "<%= config.build.dist %><%= config.assets %>/js/",
+                "src": [
+                    "**/*.js",
+                    "!**/*.min.js"
+                ],
+                "dest": "<%= config.build.dist %><%= config.assets %>/js/"
+            }
+        ]
+    }
+}

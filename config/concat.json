@@ -1,0 +1,18 @@
+{
+    "dist": {
+        "options": {
+            "separator": "\n\n"
+        },
+        "files": [
+            {
+                "src": [
+                    "<%= config.src %>/js/jspm_packages/system-polyfills.js",
+                    "<%= config.src %>/js/jspm_packages/system.js",
+                    "<%= config.src %>/js/config.js",
+                    "<%= config.build.dist %><%= config.assets %>/js--copy/app.js"
+                ],
+                "dest": "<%= config.build.dist %><%= config.assets %>/js/bundle.js"
+            }
+        ]
+    }
+}

@@ -1,0 +1,43 @@
+{
+    "dev": {
+        "files": [
+            {
+                "expand": true,
+                "cwd": "<%= config.src %>/assets/",
+                "src": "**/*",
+                "dest": "<%= config.build.dev %><%= config.assets %>"
+            },
+            {
+                "expand": true,
+                "cwd": "<%= config.src %>",
+                "src": "js/**/*",
+                "dest": "<%= config.build.dev %><%= config.assets %>"
+            }
+        ]
+    },
+    "dev-live": {
+        "files": [
+            {
+                "expand": true,
+                "cwd": "<%= config.src %>/assets/",
+                "src": "**/*",
+                "dest": "<%= config.build.dev %><%= config.assets %>"
+            },
+            {
+                "expand": true,
+                "cwd": "<%= config.src %>",
+                "src": [
+                    "js/app/**/*",
+                    "js/app.js"
+                ],
+                "dest": "<%= config.build.dev %><%= config.assets %>"
+            }
+        ]
+    },
+    "dist": {
+        "expand": true,
+        "cwd": "<%= config.src %>/assets/",
+        "src": "**/*",
+        "dest": "<%= config.build.dist %><%= config.assets %>"
+    }
+}

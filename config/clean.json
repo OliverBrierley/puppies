@@ -1,0 +1,19 @@
+{
+    "options": {
+        "force": true
+    },
+    "predev": [
+        "<%= config.build.dev %>"
+    ],
+    "predist": [
+        "<%= config.build.dist %>"
+    ],
+    "dist": {
+        "expand": true,
+        "cwd": "<%= config.build.dist %><%= config.assets %>",
+        "src": [
+            "css--unprefixed/",
+            "js--copy"
+        ]
+    }
+}

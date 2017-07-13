@@ -1,0 +1,76 @@
+{
+    "html": {
+        "files": [
+            "<%= config.src %>/html/**/*"
+        ],
+        "tasks": [
+            "processhtml:dev",
+            "amend-asset-paths"
+        ]
+    },
+    "sass": {
+        "files": [
+            "<%= config.src %>/sass/**/*"
+        ],
+        "tasks": [
+            "sass:dev"
+        ]
+    },
+    "css": {
+        "files": [
+            "<%= config.build.dev %><%= config.assets %>/css--unprefixed/**/*.css"
+        ],
+        "tasks": [
+            "postcss:dev",
+            "modernizr:dev"
+        ]
+    },
+    "js": {
+        "files": [
+            "<%= config.src %>/js/**/*.js",
+            "!<%= config.src %>/js/jspm_packages/**/*"
+        ],
+        "tasks": [
+            "jshint:js",
+            "copy:dev-live"
+        ]
+    },
+    "assets": {
+        "files": [
+            "<%= config.src %>/assets/**/*"
+        ],
+        "tasks": [
+            "copy:dev-live"
+        ]
+    },
+    "gruntfiles": {
+        "files": [
+            "<%= jshint.gruntfiles.files.src %>"
+        ],
+        "tasks": [
+            "jshint:gruntfiles"
+        ]
+    },
+
+    "buildfiles--hard-reload": {
+        "files": [
+            "<%= config.build.dev %>/**/*",
+            "!<%= config.build.dev %><%= config.assets %>/js/jspm_packages/**/*",
+            "!<%= config.build.dev %><%= config.assets %>/js/modernizr.js",
+            "!<%= config.build.dev %><%= config.assets %>/css/**/*",
+            "!<%= config.build.dev %><%= config.assets %>/css--unprefixed/**/*"
+        ],
+        "options": {
+            "livereload": true
+        }
+    },
+
+    "buildfiles--soft-reload": {
+        "files": [
+            "<%= config.build.dev %><%= config.assets %>/css/**/*"
+        ],
+        "options": {
+            "livereload": true
+        }
+    }
+}

@@ -1,0 +1,12 @@
+{
+    "dist": {
+        "files": [
+            {
+                "expand": true,
+                "cwd": "<%= config.build.dist %><%= config.assets %>/img/",
+                "src": "**/*.{png,gif,jpg}",
+                "dest": "<%= config.build.dist %><%= config.assets %>/img/"
+            }
+        ]
+    }
+}

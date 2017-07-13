@@ -1,0 +1,17 @@
+{
+    "options": {
+        "plugins": [{
+            "removeViewBox": false
+        },{
+            "removeUselessStrokeAndFill": false
+        }]
+    },
+    "dist": {
+        "files": [{
+            "expand": true,
+            "cwd": "<%= config.build.dist %><%= config.assets %>/img/",
+            "src": "**/*.svg",
+            "dest": "<%= config.build.dist %><%= config.assets %>/img/"
+        }]
+    }
+}
