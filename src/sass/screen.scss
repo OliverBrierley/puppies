@@ -8,7 +8,4 @@
 @import "core/typography";
 @import "core/layout";
 
-@import "components/header";
-@import "components/hero";
-@import "components/home";
-@import "components/case-studies";
+@import "components/**/*";
