@@ -1,0 +1,14 @@
+.cc-site--container {
+  flex-direction: column;
+  display: flex;
+  background: #fff;
+  margin-left: auto;
+  margin-right: auto;
+  min-height: 100%;
+  position: relative;
+}
+
+.cc-container {
+    max-width: $site-width;
+    margin: 0 auto;
+}

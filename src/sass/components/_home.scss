@@ -1,0 +1,15 @@
+.cc-component--homepage-content {
+  > .cc-container {
+    > .columns {
+      display: flex;
+      align-items: center;
+      
+      > .column {
+        flex: 1;
+
+        > .questions {
+        }
+        }
+      }
+    }
+}

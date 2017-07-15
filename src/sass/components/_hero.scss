@@ -1,0 +1,49 @@
+.hero {
+  overflow: hidden;
+  
+  > .items {
+    display: flex;
+    width: 200%;
+
+    > .item {
+      flex: 0 0 50%;
+
+      > .columns {
+        justify-content: flex-end;
+        align-items: stretch;
+        display: flex;
+        height:100%;
+
+        > .column {
+            width: calc(50% - 20px);
+        }
+      }
+
+      &--content {
+        margin-left: -50%;
+        @include cc-padding;
+
+        > .columns {
+          max-width: $site-width;
+          margin-left: auto;
+          margin-right: auto;
+          justify-content: flex-start;
+
+          > .column {
+            padding-right: 125px;
+          }
+        }
+      }
+
+      &--background {
+        > .columns {
+          > .column {
+            background-size: cover;
+            background-position: center center;
+            padding-bottom: 28%;
+          }
+        }
+      }
+    }
+  }
+}

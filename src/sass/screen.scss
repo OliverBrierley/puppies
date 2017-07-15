@@ -1,8 +1,14 @@
 ﻿@import "bourbon";
 @import "normalize";
+@import "mixins/padding";
 
 @import "core/vars";
+
 @import "core/base";
 @import "core/typography";
+@import "core/layout";
 
 @import "components/header";
+@import "components/hero";
+@import "components/home";
+@import "components/case-studies";

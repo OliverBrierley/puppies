@@ -1,7 +1,15 @@
 ﻿// One of the first files to be included in the screen file so any variables
 // Defined here will be available everywhere.
+$site-width: 1230px;
 
-$f-title: sans-serif;
-$f-body: sans-serif;
+$f-title: 'Nixie One', cursive;
+$f-body: 'Libre Baskerville', serif;
+
 
 $c-body: #222222;
+
+$c-lightblue: #8ab2e5;
+$c-darkblue: #4d74a5;
+$c-beige: #f7f3e9;
+$c-brown: #938a83;
+$c-pink: #e5bdbb;
