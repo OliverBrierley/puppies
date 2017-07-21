@@ -1,0 +1,22 @@
+.cc-component--gallery {
+
+  .gallery {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+
+    > .item {
+      min-height: 400px;
+      background-color: black;
+      margin-bottom: 35px;
+
+      &:nth-child(odd) {
+          padding-right: 15px;
+      }
+
+      &:nth-child(even) {
+          padding-left: 15px;
+      }
+    }
+  }
+}

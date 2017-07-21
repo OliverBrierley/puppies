@@ -1,15 +1,31 @@
 .cc-component--homepage-content {
+  @include cc-padding;
+
   > .cc-container {
     > .columns {
       display: flex;
-      align-items: center;
-      
+
       > .column {
         flex: 1;
 
-        > .questions {
+        &:nth-child(odd) {
+            padding-right: 15px;
         }
+
+        &:nth-child(even) {
+            padding-left: 15px;
+        }
+
+         .header {
+          margin-bottom:45px;
+
+          > .inner {
+            display: flex;
+            align-items: center;
+            margin-bottom:25px;
+          }
         }
       }
     }
+  }
 }

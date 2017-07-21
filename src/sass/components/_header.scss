@@ -1,9 +1,12 @@
 .cc-component--header {
   background: $c-beige;
-  padding: 15px 40px;
+  padding: 12px 40px;
 
   > .cc-container {
     > .inner {
+      display: flex;
+      align-items: center;
+
       > .list {
         list-style: none;
         display: flex;
@@ -65,6 +68,17 @@
               letter-spacing: 1px;
             }
           }
+        }
+      }
+      > .content {
+        text-align: right;
+        margin-left: auto;
+        display: flex;
+        flex-direction: column;
+
+        > h5 {
+          font-size: 18px;
+          margin-bottom: 5px;
         }
       }
     }

@@ -51,9 +51,21 @@ h3,
 h4,
 h5,
 h6 {
+    margin: 0;
     font-family: $f-title;
 }
 
-a {
+h3.title {
+    font-size: 35px;
+}
+
+.link {
+  margin-left: auto;
+  background: $c-pink;
+  color: #fff;
+  text-transform: uppercase;
+  border-radius: 5px;
+  padding: 12px;
+  font-size: 14px;
   text-decoration: none;
 }
