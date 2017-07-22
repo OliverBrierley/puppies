@@ -2,10 +2,12 @@
 
   .gallery {
     display: flex;
-    align-items: flex-start;
-    justify-content: space-around;
+    flex-wrap: wrap;
+    justify-content: space-between;
 
     > .item {
+      display: flex;
+      flex: 0 1 calc(50% - 30px);
       min-height: 400px;
       background-color: black;
       margin-bottom: 35px;

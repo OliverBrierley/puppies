@@ -1,12 +1,11 @@
-define(["jquery"], function ($) {
-    $(function () {
-        var main = {
-            init: function () {
-                // Your code here
-                console.log('hello world, these get removed in dist btw!');
-            }
-        };
+import $ from 'jquery';
+import StickyNavigation from 'app/sticky-navigation';
 
-        main.init();
-    });
-});
+const Main = class {
+  constructor() {
+
+    new StickyNavigation();
+  }
+};
+
+export default Main;
