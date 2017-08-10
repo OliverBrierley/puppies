@@ -1,24 +1,19 @@
 .cc-component--gallery {
 
   .gallery {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 400px 400px 400px;
+    list-style: none;
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+    padding: 0px;
+
 
     > .item {
-      display: flex;
-      flex: 0 1 calc(50% - 30px);
-      min-height: 400px;
-      background-color: black;
-      margin-bottom: 35px;
-
-      &:nth-child(odd) {
-          padding-right: 15px;
-      }
-
-      &:nth-child(even) {
-          padding-left: 15px;
-      }
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
     }
   }
 }
