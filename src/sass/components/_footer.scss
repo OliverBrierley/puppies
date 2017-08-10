@@ -5,7 +5,8 @@
   background-repeat: no-repeat;
 
   > .inner {
-    @include cc-padding;
+    padding-top: 25px;
+    padding-bottom: 10px;
 
     > .cc-container {
       > .columns {

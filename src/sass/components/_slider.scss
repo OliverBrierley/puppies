@@ -1,0 +1,56 @@
+.cc-component--slider {
+  > .inner {
+    > .cc-container {
+      > p {
+      }
+    }
+    > .slider {
+      margin: 0px;
+      padding: 20px 0px 40px 0px;
+      position: relative;
+
+      > .slick-list {
+        > .slick-track {
+          > .item {
+            min-width: $site-width;
+            padding:0 15px;
+            outline: none;
+
+            > .image {
+              background-size: cover;
+              background-position: center;
+              background-repeat: no-repeat;
+              height: 100%;
+              min-height: 550px;
+              fade: false;
+            }
+          }
+        }
+      }
+
+      > .slick-arrow {
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          margin: auto 0;
+          z-index: 99;
+          text-indent: -9999px;
+          white-space: nowrap;
+          overflow: hidden;
+          width: 20px;
+          height: 45px;
+          background-color: $c-beige;
+          outline: none;
+          border: none;
+      }
+
+      > .slick-next {
+        right: 20px;
+      }
+
+      > .slick-prev {
+        left: 20px;
+      }
+    }
+  }
+}
