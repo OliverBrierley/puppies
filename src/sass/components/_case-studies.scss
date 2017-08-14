@@ -38,16 +38,16 @@
           background: $c-beige;
           display: flex;
           flex-direction: row;
-          align-items: space-between;
+          align-content: space-between;
 
           &:after {
             content: '';
             display: block;
             width: 75px;
-            background-image: url('../img/icons/chevron-white.svg');
+            background-image: url('../img/icons/arrow.png');
             background-repeat: no-repeat;
             background-position: center;
-            background-size: contain;
+            background-size: initial;
             border-left: 2px solid $c-white;
             margin-left: 15px;
           }
