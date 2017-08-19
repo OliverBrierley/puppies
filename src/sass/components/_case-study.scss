@@ -1,15 +1,6 @@
-.cc-component--case-study {
-  > .header {
-    margin-bottom:45px;
-
-    > .inner {
-      display: flex;
-      align-items: center;
-      margin-bottom:25px;
-    }
-  }
-
-  > .list {
+.cc-component--case-study--page,
+.cc-component--case-studies--homepage {
+  .list {
     margin: 0;
     padding: 0;
     list-style: none;
@@ -20,19 +11,6 @@
       > .casestudy {
         text-decoration: none;
         color: $c-body;
-
-        > .image {
-          padding-bottom: 56%;
-          background-repeat: no-repeat;
-          background-size: cover;
-          background-position: center;
-
-          > .meta {
-            padding:15px 20px;
-            background:$c-beige;
-            display: inline-block;
-          }
-        }
 
         > .title {
           background: $c-beige;
@@ -55,6 +33,19 @@
           > h4 {
             font-size: 25px;
             padding:15px 20px;
+          }
+        }
+
+        > .image {
+          padding-bottom: 56%;
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: center;
+
+          > .meta {
+            padding:15px 20px;
+            background:$c-beige;
+            display: inline-block;
           }
         }
       }
