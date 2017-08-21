@@ -1,0 +1,59 @@
+.cc-component--contact-us-content {
+  margin: 30px;
+
+  > .cc-container {
+    > .columns {
+      display: flex;
+
+      > .column {
+
+
+        form {
+          display: grid;
+        }
+
+        > .map {
+          h2 {
+            margin-top: 20px;
+          }
+        }
+      }
+      .column2 {
+        width: auto;
+        padding: 40px;
+        align-items: center;
+        display: grid;
+        background-color: $c-beige;
+        margin: auto;
+
+
+        .item {
+          padding-bottom: 15px;
+
+          input {
+            width: auto;
+          }
+        }
+        .items {
+          padding-bottom: 15px;
+        }
+        .item {
+          padding-bottom: 15px;
+
+          textarea {
+            width: auto;
+          }
+        }
+        .item {
+          input[type=submit] {
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+}
