@@ -3,6 +3,7 @@
   background-color: $c-brown;
   background-position: center;
   background-repeat: no-repeat;
+ 
 
   > .inner {
     padding-top: 25px;
@@ -94,4 +95,9 @@
       }
     }
   }
+
+  @media (min-width: $bp-tablet) {
+     background-image:url('../img/footer.png');
+  }
+
 }

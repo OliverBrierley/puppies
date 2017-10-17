@@ -5,6 +5,7 @@ const StickyNavigation = class {
     this.$body = $('body');
     this.$header = this.$body.find('.site-header');
     this.offset = this.$header.offset().top;
+    this.$toggle = $('.hamburger');
     this.$w = $(window);
 
     if(this.$header.length ) {
@@ -15,6 +16,13 @@ const StickyNavigation = class {
   _init_events() {
     this.$w.on('scroll', (e) => {
       this.scroll(e);
+    });
+
+    this.$toggle.on('click', (_e) => {
+      _e.preventDefault();
+
+      $(_e.currentTarget).toggleClass('active');
+      $('.site-header .list').toggleClass('active');
     });
   }
 

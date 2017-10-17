@@ -17,8 +17,9 @@ System.config({
     "babel-runtime": "npm:babel-runtime@5.8.35",
     "core-js": "npm:core-js@1.2.6",
     "jquery": "github:components/jquery@2.2.0",
-    "kenwheeler/slick": "github:kenwheeler/slick@1.7.0",
+    "kenwheeler/slick": "github:kenwheeler/slick@1.8.1",
     "mckamey/countdownjs": "github:mckamey/countdownjs@2.6.0",
+    "slick": "npm:slick@1.12.2",
     "github:jspm/nodelibs-assert@0.1.0": {
       "assert": "npm:assert@1.3.0"
     },

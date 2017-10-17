@@ -1,0 +1,70 @@
+.hamburger {
+    position: relative;
+    display: block;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    box-sizing: content-box;
+    width: 20px;
+    height: 18px;
+    background: none;
+    outline: none;
+    border: none;
+
+    > .inner {
+        position: absolute;
+        width: 20px;
+        height: 2px;
+        margin-top: -1px;
+        transition-property: transform;
+        transition-timing-function: cubic-bezier(.55,.055,.675,.19);
+        transition-duration: .1s;
+        background: #000;
+        top: 50%;
+
+        &:before, &:after {
+            content: '';
+            display: block;
+            position: absolute;
+            width: 20px;
+            height: 2px;
+            transition-timing-function: ease;
+            transition-duration: .15s;
+            transition-property: transform;
+            background: #000;
+        }
+
+        &:before {
+            transition: top .1s ease .14s, opacity .1s ease;
+            top: -8px;
+        }
+
+        &:after {
+            transition: bottom .1s ease .14s, transform .1s cubic-bezier(.55,.055,.675,.19);
+            bottom: -8px;
+        }
+    }
+
+    &.active {
+        > .inner {
+            transition-delay: .14s;
+            transition-timing-function: cubic-bezier(.215,.61,.355,1);
+            transform: rotate(45deg);
+
+            &:before {
+                top: 0;
+                transition: top .1s ease,opacity .1s ease .14s;
+                opacity: 0;
+            }
+
+            &:after {
+                bottom: 0;
+                transition: bottom .1s ease, transform .1s cubic-bezier(.215,.61,.355,1) .14s;
+                transform: rotate(-90deg);
+            }
+        }
+    }
+
+    @media (min-width: $bp-header) {
+        display: none;
+    }
+}

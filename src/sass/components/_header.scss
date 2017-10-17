@@ -1,12 +1,11 @@
 .site-header {
   background: $c-beige;
-  padding: 12px 40px;
+  padding: 12px 0;
   position: relative;
 
   > .cc-container {
     > .inner {
       display: flex;
-      flex-direction: column;
       align-items: center;
 
       > .toggle {
@@ -19,15 +18,25 @@
         padding: 0;
         display: none;
         position: absolute;
-        top: 30px;
+        top: 95px;
         left: 0;
+        width: 100%;
+        border-bottom: 1px solid #fff;
+        z-index: 999;
+
+        &.active {
+          display: block;
+        }
 
         > .item {
           > .link {
             display: flex;
             align-items: center;
             padding: 12px;
-            border-radius: 10px;
+            width: 100%;
+            border-radius: 0;
+
+            
 
           &--blue {
             background-color: $c-lightblue;
@@ -69,7 +78,7 @@
             }
 
             > .text {
-              font-size: 16px;
+              font-size: 14px;
               font-weight: 600;
               color: #fff;
               letter-spacing: 1px;
@@ -93,6 +102,7 @@
 
   @media (min-width: $bp-header) {
     position: inherit;
+    padding: 12px 40px;
 
     > .cc-container {
       > .inner {
@@ -102,12 +112,34 @@
           display: flex;
           position: relative;
           top: 0;
+          width: auto;
+
 
           > .item {
             margin-right: 32px;
 
             > .link {
+              border-radius: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+  @media (min-width: $bp-countdown) {
+     > .cc-container {
+      > .inner {
+        > .list {
 
+          > .item {
+
+            > .link {
+                width: auto;
+                
+
+              > .text {
+                font-size: 16px;
+              }
             }
           }
         }
