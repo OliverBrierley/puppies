@@ -1,0 +1,121 @@
+.cc-component--next-content {
+  @include cc-padding;
+
+  > .cc-container {
+
+    > .inner {
+
+
+      > .timeline {
+
+
+
+        > #countdown {
+        	display: flex;
+        	text-align: center;
+          flex-direction: row;
+          justify-content: center;
+          color: $c-pink;
+          font-family: $c-pink;
+
+          > .hours {
+
+            .value {
+              &:before, &:after {
+                content:":";
+                display: inline-block;
+                font-size: 60px;
+                position: absolute;
+                top: 10px;
+                bottom: 0;
+                margin: auto;
+
+
+              }
+              &:before {
+                left: -15px;
+              }
+
+              &:after {
+                right: -15px;
+              }
+            }
+          }
+          .value {
+            font-size: 60px;
+            display: flex;
+            flex-direction: column;
+            padding: 20px 35px 0px 35px;
+            left: 0;
+            right: 0;
+            position: relative;
+          }
+
+          .label {
+            font-size: 30px;
+          }
+        }
+      }
+    }
+  }
+
+    @media (min-width: $bp-countdown) {
+
+    > .cc-container {
+
+      > .inner {
+
+
+        > .timeline {
+
+
+          > #countdown {
+            display: flex;
+            text-align: center;
+            flex-direction: row;
+            justify-content: center;
+            color: $c-pink;
+            font-family: $c-pink;
+
+            > .hours {
+
+              .value {
+                &:before, &:after {
+                  content:":";
+                  display: inline-block;
+                  font-size: 225px;
+                  position: absolute;
+                  top: 0;
+                  bottom: 0;
+                  margin: auto;
+
+
+                }
+                &:before {
+                  left: -35px;
+                }
+
+                &:after {
+                  right: -35px;
+                }
+              }
+            }
+            .value {
+              font-size: 225px;
+              display: flex;
+              flex-direction: column;
+              padding: 20px 50px 0px 50px;
+              left: 0;
+              right: 0;
+              position: relative;
+            }
+
+            .label {
+              font-size: 50px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

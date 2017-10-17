@@ -88,7 +88,8 @@
     },
     "dependencies": {
       "jquery": "github:components/jquery@^2.1.4",
-      "kenwheeler/slick": "github:kenwheeler/slick@^1.7.0"
+      "kenwheeler/slick": "github:kenwheeler/slick@^1.7.0",
+      "mckamey/countdownjs": "github:mckamey/countdownjs@^2.6.0"
     },
     "devDependencies": {
       "babel": "npm:babel-core@^5.8.24",

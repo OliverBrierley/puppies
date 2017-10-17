@@ -1,12 +1,23 @@
 .cc-component--case-study--page {
   > .cc-container {
     > .list {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows: 1fr 1fr;
-      grid-column-gap: 30px;
-      grid-row-gap: 30px;
-      padding: 40px 15px 0px 15px;
+      display: flex;
+      flex-direction: column;
+      padding-top: 40px;
+    }
+  }
+
+@media (min-width: $bp-tablet) {
+
+    > .cc-container {
+      > .list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-column-gap: 30px;
+        grid-row-gap: 30px;
+        padding: 40px 15px 0px 15px;
+      }
     }
   }
 }

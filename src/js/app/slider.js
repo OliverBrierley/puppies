@@ -21,8 +21,22 @@ const Slider = class {
   slider() {
     this.$slider.slick({
       centerMode: true,
-      centerPadding: '100px',
-      slidesToShow: 1
+      slidesToShow: 1,
+
+      responsive: [
+        {
+          breakpoint: 950,
+          settings: {
+            centerPadding: '100px'
+          }
+        },
+        {
+          breakpoint: 600,
+          settings: {
+            centerPadding: '20px'
+          }
+        }
+      ]
     });
   }
 };

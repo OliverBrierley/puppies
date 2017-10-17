@@ -2,7 +2,7 @@ import $ from 'jquery';
 import StickyNavigation from 'app/sticky-navigation';
 import Slider from 'app/slider';
 import Faq from 'app/faq';
-import Countdown from 'app/countdown-awesome';
+import Countdown from 'app/countdown';
 
 const Main = class {
   constructor() {
